@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ제일제당 > 기업소개</title>
+    <link href="css/sub_style.css" rel=stylesheet type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/lucid.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var scrollTopAbout = $(window).scrollTop()
+            $('#aboutbody').find('section').each(function(){
+                if(scrollTopAbout > $(this).offset().top - 800){
+                    $(this).find('.redtitlefirst').delay(300).animate({opacity:1, top:0},700)
+                    $(this).find('.text_wrap>p').delay(700).animate({opacity:1, left:0},700)
+                    $(this).find('.yummy').animate({left:'40%'},700)
+                    $(this).find('.prin_list>li').eq(0).delay(200).animate({top:0, opacity:1},700)
+                    $(this).find('.prin_list>li').eq(1).delay(400).animate({top:0, opacity:1},700)
+                    $(this).find('.prin_list>li').eq(2).delay(600).animate({top:0, opacity:1},700)
+                    $(this).find('.prin_list>li').eq(3).delay(800).animate({top:0, opacity:1},700)
+                    $(this).find('.abox1_wrap>.abox_img').delay(300).animate({left:0, opacity:1}, 800)
+                    $(this).find('.abox1_wrap>.abox_text').delay(300).animate({right:0, opacity:1}, 800)
+                    $(this).find('.abox2_wrap>.abox_text').delay(1000).animate({left:0, opacity:1}, 800)
+                    $(this).find('.abox2_wrap>.abox_img').delay(1000).animate({right:0, opacity:1}, 800)
+                    $(this).find('.acolor_area').delay(300).animate({left:10}, 600)
+                    $(this).find('.acolor_area').find('.redtitle').delay(700).animate({opacity:1}, 600)
+                    $(this).find('.acolor_area').find('tr').delay(1400).animate({opacity:1}, 600)
+                    $(this).find('.map').delay(900).animate({opacity:1}, 1000)
+                }
+            })
+            
+            $('.aboutbgtext').animate({top: 400 + scrollTopAbout - (scrollTopAbout/2)}, 0)
+        })
+        
+        $('.prin_list>li').each(function(index){
+            $(this).mouseenter(function(){
+                $(this).find('img').attr('src','img/icon/prin'+index+'_on.png')
+            })
+            $(this).mouseleave(function(){
+                $(this).find('img').attr('src','img/icon/prin'+index+'.png')
+            })
+        })
+    }) //도큐먼트 레디 닫힘
+    </script>
+</head>
+<body id="aboutbody">
+  <img src="img/sub/about/abouttext.png" alt="brand story" class="aboutbgtext">
+  
+   <div id="goTop">
+        <img src="img/icon/up_black.png" alt="페이지 상단으로 이동">
+        TOP
+    </div>
+    <div id="searchground">
+        <form method="get">
+            <input type=text class="searchtext">
+            <input type="submit" class="go" value="GO">
+            <div class="close">Close</div>
+        </form>
+    </div>
+    <!--    <? include("header_include.html"); ?>-->
+    <header id="header">
+        <div class="headerbox1">
+            <ul class="lang">
+                <li><a href="#">KR</a>
+                </li>
+                <li><a href="#">EN</a>
+                </li>
+                <li><a href="#">CH</a>
+                </li>
+            </ul>
+            <a href="index.html" class="url">CJ.CO.KR</a>
+        </div>
+        <div class="headerbox2">
+            <h1>
+                <a href="index.html" class="logo">
+                    <img src="img/logo/top_logo.png" alt="CJ제일제당">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">Company<div class="redline"></div></a>
+                        <ul class="sub">
+                            <div class="li_inner">
+                                <li><a href="about.html">CJ제일제당소개</a>
+                                </li>
+                                <li><a href="history.html">연혁</a>
+                                </li>
+                                <li><a href="invest.html">투자정보</a>
+                                </li>
+                                <li><a href="#">사업소개</a>
+                                </li>
+                                <li><a href="about.html">인재채용</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#">Brands<div class="redline"></div></a>
+                        <ul class="sub">
+                            <div class="li_inner">
+                                <li><a href="#">비비고</a>
+                                </li>
+                                <li><a href="#">햇반</a>
+                                </li>
+                                <li><a href="#">고메</a>
+                                </li>
+                                <li><a href="#">백설</a>
+                                </li>
+                                <li><a href="#">다시다</a>
+                                </li>
+                                <li><a href="#">해찬들</a>
+                                </li>
+                                <li><a href="#">스팸</a>
+                                </li>
+                                <li><a href="#">행복한콩</a>
+                                </li>
+                                <li><a href="#">다담</a>
+                                </li>
+                                <li><a href="#">쁘띠첼</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sustainability<div class="redline"></div></a>
+                        <ul class="sub">
+                            <div class="li_inner">
+                                <li><a href="#">지속가능경영</a>
+                                </li>
+                                <li><a href="#">연구소 소개</a>
+                                </li>
+                                <li><a href="#">윤리경영</a>
+                                </li>
+                                <li><a href="history.html">사회공헌</a>
+                                </li>
+                                <li><a href="history.html">수상/성과</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#">Culture<div class="redline"></div></a>
+                        <ul class="sub">
+                            <div class="li_inner">
+                                <li><a href="#">K-푸드스토리</a>
+                                </li>
+                                <li><a href="#">CJ뉴스</a>
+                                </li>
+                                <li><a href="#">이벤트</a>
+                                </li>
+                                <li><a href="#">멀티미디어</a>
+                                </li>
+                                <li><a href="#">이달의 신제품</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#">Customer<div class="redline"></div></a>
+                        <ul class="sub">
+                            <div class="li_inner">
+                                <li><a href="#">고객행복센터</a>
+                                </li>
+                                <li><a href="#">고객의소리</a>
+                                </li>
+                                <li><a href="#">자주찾는질문</a>
+                                </li>
+                                <li><a href="#">공지사항</a>
+                                </li>
+                                <li><a href="about.html">오시는길</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="util">
+                <li class="search">
+                </li>
+                <li class="menu">
+                </li>
+            </ul>
+        </div>
+    </header>
+    <header id="m_header">
+            <div class="headerbox">
+            <h1>
+                <a href="index.html" class="logo">
+                    <img src="img/logo/top_logo.png" alt="CJ제일제당">
+                </a>
+            </h1>
+            <ul class="m_util">
+                <li class="search">
+                </li>
+                <li class="menu">
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav id="m_gnb">
+        <div class="x_btn"><img src="img/icon/xbtn.png" alt="close"></div>
+        <ul>
+            <li>Company<div class="namewrite">기업소개</div>
+            </li>
+            <li>Brands<div class="namewrite">브랜드</div>
+            </li>
+            <li>Sustainability<div class="namewrite">지속가능경영</div>
+            </li>
+            <li>Culture<div class="namewrite">문화를 이끌다</div>
+            </li>
+            <li>Customer<div class="namewrite">고객 서비스</div>
+            </li>
+        </ul>
+        <div class="m_subbox">
+            <ul class="m_sub1">
+                <li><a href="about.html">CJ제일제당소개</a>
+                </li>
+                <li><a href="history.html">연혁</a>
+                </li>
+                <li><a href="invest.html">투자정보</a>
+                </li>
+                <li><a href="#">사업소개</a>
+                </li>
+                <li><a href="about.html">인재채용</a>
+                </li>
+            </ul>
+            <ul class="m_sub2">
+                <li><a href="#">비비고</a>
+                </li>
+                <li><a href="#">햇반</a>
+                </li>
+                <li><a href="#">고메</a>
+                </li>
+                <li><a href="#">백설</a>
+                </li>
+                <li><a href="#">다시다</a>
+                </li>
+                <li><a href="#">해찬들</a>
+                </li>
+                <li><a href="#">스팸</a>
+                </li>
+                <li><a href="#">행복한콩</a>
+                </li>
+                <li><a href="#">다담</a>
+                </li>
+                <li><a href="#">쁘띠첼</a>
+                </li>
+            </ul>
+            <ul class="m_sub3">
+                <li><a href="#">지속가능경영</a>
+                </li>
+                <li><a href="#">연구소 소개</a>
+                </li>
+                <li><a href="#">윤리경영</a>
+                </li>
+                <li><a href="history.html">사회공헌</a>
+                </li>
+                <li><a href="history.html">수상/성과</a>
+                </li>
+            </ul>
+            <ul class="m_sub4">
+                <li><a href="#">K-푸드스토리</a>
+                </li>
+                <li><a href="#">CJ뉴스</a>
+                </li>
+                <li><a href="#">이벤트</a>
+                </li>
+                <li><a href="#">멀티미디어</a>
+                </li>
+                <li><a href="#">이달의 신제품</a>
+                </li>
+            </ul>
+            <ul class="m_sub5">
+                <li><a href="#">고객행복센터</a>
+                </li>
+                <li><a href="#">고객의소리</a>
+                </li>
+                <li><a href="#">자주찾는질문</a>
+                </li>
+                <li><a href="#">공지사항</a>
+                </li>
+                <li><a href="about.html">오시는길</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    
+    <section id="aboutBanner">
+       <video src="img/sub/about/space.mp4" muted autoplay loop></video>
+        <h2>BRAND STORY</h2>
+        <h3>CJ CHEILJEDANG</h3>
+        <p>건강, 즐거움, 편리를 창조하는 글로벌 생활문화기업</p>
+    </section>
+    
+    <section id="about1">
+        <img src="img/sub/about/yummy.jpg" alt="" class="yummy">
+        <div class="text_wrap">
+            <h4 class="redtitle redtitlefirst">CORE VALUES</h4>
+            <p>CJ제일제당은 끊임없는 도전과 혁신을 통해 글로벌 식품 기업으로 도약하고 있습니다<br>
+            변화와 혁신의 DNA로 소비자중심경영을 실천하며, 건강, 즐거움, 편리를 창조하는<br>
+            글로벌 생활문화기업으로 발전해 나가겠습니다.</p>
+        </div>
+    </section>
+    
+    <section id="about2">
+        <h4 class="redtitle redtitlefirst">PRINCIPLES</h4>
+            <ul class="prin_list">
+                <li class="ybox">정직
+                    <img src="img/icon/prin0.png" alt="">
+                </li>
+                <li class="rbox">열정
+                    <img src="img/icon/prin1.png" alt="">
+                </li>
+                <li class="bbox">창의
+                    <img src="img/icon/prin2.png" alt="">
+                </li>
+                <li class="gbox">존중
+                    <img src="img/icon/prin3.png" alt="">
+                </li>
+            </ul>
+            <div class="awhite_line"></div>
+    </section>
+    
+    <section id="about3">
+        <div class="abox1_wrap">
+            <div class="abox_img">
+                
+            </div>
+            <div class="abox_text">
+                <h4 class="redtitle">MISSION</h4>
+                <p><span>세계인의 식탁에 맛있는 즐거움을 전합니다</span><br><br>
+                현지음식과 한식을 결합한 K-Food로 한국의 맛을 세계화하고,
+                <br>건강하고 편리한 라이프스타일을 나누고자 합니다.</p>
+            </div>
+        </div>
+        <div class="abox2_wrap">
+            <div class="abox_text">
+                <h4 class="redtitle">VISION</h4>
+                <p><span>Green BIO 기술 혁신으로<br>글로벌 친환경 시대를 열어갑니다</span><br><br>
+                자연에서 얻고 자연으로 돌려주는 기술, 지속 가능한 건강한 지구
+                <br>이것이 CJ제일제당이 생각하는 BIO 사업의 철학입니다.</p>
+            </div>
+            <div class="abox_img">
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id="about4">
+        <div class="gray_g">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.622951366336!2d127.00108375087763!3d37.56394623193501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca25e22256703%3A0x386e3ec0e0817d29!2z7JSo7KCc7J207KCc7J287KCc64u5!5e0!3m2!1sko!2skr!4v1617688192957!5m2!1sko!2skr" allowfullscreen="" loading="lazy" class="map"></iframe>
+            <div class="acolor_area">
+                <h4 class="redtitle">
+                    CJ제일제당센터 본사
+                </h4>
+                <table>
+                    <tr>
+                        <th>주소</th>
+                        <td>서울특별시 중구 동호로 330<br>CJ제일제당센터 (우)04560</td>
+                    </tr>
+                    <tr>
+                        <th>전화번호</th>
+                        <td>02-6740-1114</td>
+                    </tr>
+                    <tr>
+                        <th>고객센터</th>
+                        <td>080-850-1200</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!--    <? include("footer_include.html"); ?>-->
+    <footer id="footer">
+        <div class="footer_text">
+            <p>씨제이제일제당(주) 서울특별시 중구 동호로 330 CJ 제일제당센터<br>
+                대표자 손경식  사업자등록번호 104-86-09535<br><br><br>
+                대표전화 02-6740-1114<br>
+                Copyright &copy; 2021. CJ CHEILJEDANG Corp. All Rights Reserved.
+            </p>
+        </div>
+        <div class="family_site">
+            <p>Family Site</p>
+            <div class="family_icon">
+                <img src="img/icon/arrow_down.png" alt="">
+            </div>
+            <ul class="site_list">
+                <li><a href="http://corp.cgv.co.kr/" target="_blank">CJ CGV</a></li>
+                <li><a href="https://www.cjem.net:433/main/" target="_blank">CJ ENM</a></li>
+                <li><a href="https://www.oliveyoung.co.kr/store/company/brandStory.do" target="_blank">OLIVE YOUNG</a></li>
+            </ul>
+        </div>
+        <ul class="sns fl">
+            <li>
+                <img src="img/icon/sns_insta.png" alt="instagram">
+            </li>
+            <li>
+                <img src="img/icon/sns_kakao.png" alt="kakaotalk">
+            </li>
+            <li>
+                <img src="img/icon/sns_youtube.png" alt="youtube">
+            </li>
+        </ul>
+        <p class="center fl">Service Center<br><span>1544-5357</span></p>
+    </footer>
+</body>
+</html>

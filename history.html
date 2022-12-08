@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ제일제당 > 연혁</title>
+    <link href="css/sub_style.css" rel=stylesheet type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/lucid.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/historyjs.js"></script>
+</head>
+<body id="historybody">
+   <div id="goTop">
+        <img src="img/icon/up_black.png" alt="페이지 상단으로 이동">
+        TOP
+    </div>
+    <div id="searchground">
+        <form method="get">
+            <input type=text class="searchtext">
+            <input type="submit" class="go" value="GO">
+            <div class="close">Close</div>
+        </form>
+    </div>
+    <!--    <? include("header_include.html"); ?>-->
+    <header id="header">
+        <div class="headerbox1">
+            <ul class="lang">
+                <li><a href="#">KR</a>
+                </li>
+                <li><a href="#">EN</a>
+                </li>
+                <li><a href="#">CH</a>
+                </li>
+            </ul>
+            <a href="index.html" class="url">CJ.CO.KR</a>
+        </div>
+        <div class="headerbox2">
+            <h1>
+                <a href="index.html" class="logo">
+                    <img src="img/logo/top_logo.png" alt="CJ제일제당">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">Company<div class="redline"></div></a>
+                        <ul class="sub">
+                            <div class="li_inner">
+                                <li><a href="about.html">CJ제일제당소개</a>
+                                </li>
+                                <li><a href="history.html">연혁</a>
+                                </li>
+                                <li><a href="invest.html">투자정보</a>
+                                </li>
+                                <li><a href="#">사업소개</a>
+                                </li>
+                                <li><a href="about.html">인재채용</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#">Brands<div class="redline"></div></a>
+                        <ul class="sub">
+                            <div class="li_inner">
+                                <li><a href="#">비비고</a>
+                                </li>
+                                <li><a href="#">햇반</a>
+                                </li>
+                                <li><a href="#">고메</a>
+                                </li>
+                                <li><a href="#">백설</a>
+                                </li>
+                                <li><a href="#">다시다</a>
+                                </li>
+                                <li><a href="#">해찬들</a>
+                                </li>
+                                <li><a href="#">스팸</a>
+                                </li>
+                                <li><a href="#">행복한콩</a>
+                                </li>
+                                <li><a href="#">다담</a>
+                                </li>
+                                <li><a href="#">쁘띠첼</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sustainability<div class="redline"></div></a>
+                        <ul class="sub">
+                            <div class="li_inner">
+                                <li><a href="#">지속가능경영</a>
+                                </li>
+                                <li><a href="#">연구소 소개</a>
+                                </li>
+                                <li><a href="#">윤리경영</a>
+                                </li>
+                                <li><a href="history.html">사회공헌</a>
+                                </li>
+                                <li><a href="history.html">수상/성과</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#">Culture<div class="redline"></div></a>
+                        <ul class="sub">
+                            <div class="li_inner">
+                                <li><a href="#">K-푸드스토리</a>
+                                </li>
+                                <li><a href="#">CJ뉴스</a>
+                                </li>
+                                <li><a href="#">이벤트</a>
+                                </li>
+                                <li><a href="#">멀티미디어</a>
+                                </li>
+                                <li><a href="#">이달의 신제품</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="#">Customer<div class="redline"></div></a>
+                        <ul class="sub">
+                            <div class="li_inner">
+                                <li><a href="#">고객행복센터</a>
+                                </li>
+                                <li><a href="#">고객의소리</a>
+                                </li>
+                                <li><a href="#">자주찾는질문</a>
+                                </li>
+                                <li><a href="#">공지사항</a>
+                                </li>
+                                <li><a href="about.html">오시는길</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="util">
+                <li class="search">
+                </li>
+                <li class="menu">
+                </li>
+            </ul>
+        </div>
+    </header>
+    <header id="m_header">
+            <div class="headerbox">
+            <h1>
+                <a href="index.html" class="logo">
+                    <img src="img/logo/top_logo.png" alt="CJ제일제당">
+                </a>
+            </h1>
+            <ul class="m_util">
+                <li class="search">
+                </li>
+                <li class="menu">
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav id="m_gnb">
+        <div class="x_btn"><img src="img/icon/xbtn.png" alt="close"></div>
+        <ul>
+            <li>Company<div class="namewrite">기업소개</div>
+            </li>
+            <li>Brands<div class="namewrite">브랜드</div>
+            </li>
+            <li>Sustainability<div class="namewrite">지속가능경영</div>
+            </li>
+            <li>Culture<div class="namewrite">문화를 이끌다</div>
+            </li>
+            <li>Customer<div class="namewrite">고객 서비스</div>
+            </li>
+        </ul>
+        <div class="m_subbox">
+            <ul class="m_sub1">
+                <li><a href="about.html">CJ제일제당소개</a>
+                </li>
+                <li><a href="history.html">연혁</a>
+                </li>
+                <li><a href="invest.html">투자정보</a>
+                </li>
+                <li><a href="#">사업소개</a>
+                </li>
+                <li><a href="about.html">인재채용</a>
+                </li>
+            </ul>
+            <ul class="m_sub2">
+                <li><a href="#">비비고</a>
+                </li>
+                <li><a href="#">햇반</a>
+                </li>
+                <li><a href="#">고메</a>
+                </li>
+                <li><a href="#">백설</a>
+                </li>
+                <li><a href="#">다시다</a>
+                </li>
+                <li><a href="#">해찬들</a>
+                </li>
+                <li><a href="#">스팸</a>
+                </li>
+                <li><a href="#">행복한콩</a>
+                </li>
+                <li><a href="#">다담</a>
+                </li>
+                <li><a href="#">쁘띠첼</a>
+                </li>
+            </ul>
+            <ul class="m_sub3">
+                <li><a href="#">지속가능경영</a>
+                </li>
+                <li><a href="#">연구소 소개</a>
+                </li>
+                <li><a href="#">윤리경영</a>
+                </li>
+                <li><a href="history.html">사회공헌</a>
+                </li>
+                <li><a href="history.html">수상/성과</a>
+                </li>
+            </ul>
+            <ul class="m_sub4">
+                <li><a href="#">K-푸드스토리</a>
+                </li>
+                <li><a href="#">CJ뉴스</a>
+                </li>
+                <li><a href="#">이벤트</a>
+                </li>
+                <li><a href="#">멀티미디어</a>
+                </li>
+                <li><a href="#">이달의 신제품</a>
+                </li>
+            </ul>
+            <ul class="m_sub5">
+                <li><a href="#">고객행복센터</a>
+                </li>
+                <li><a href="#">고객의소리</a>
+                </li>
+                <li><a href="#">자주찾는질문</a>
+                </li>
+                <li><a href="#">공지사항</a>
+                </li>
+                <li><a href="about.html">오시는길</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="history">
+        <div class="hscroll">
+            SCROLL
+            <img src="img/icon/scroll_w.gif" alt="">
+        </div>
+        <ul class="history_imglist ycut0">
+            <li class="y2010_1">
+                <img src="img/sub/year/2010-7.jpg" alt="">
+                <p>글로벌 BIO 사업 매출 2조원 돌파</p>
+            </li>
+            <li class="y2010_2">
+                <img src="img/sub/year/2010-6.jpg" alt="">
+                <p>통합연구소 CJ 블로썸 파크 개관</p>
+            </li>
+            <li class="y2010_3">
+                <img src="img/sub/year/2010-5.jpg" alt="">
+                <p>미국 BIO벤처기업 Metabolix 자산인수</p>
+            </li>
+            <li class="y2010_4 ycut1">
+                <img src="img/sub/year/2010-4.png" alt="" class="png">
+                <p>‘비비고’ 만두로 美 시장 1위</p>
+            </li>
+            <li class="y2010_5">
+                <img src="img/sub/year/2010-3.jpg" alt="">
+                <p>2012년 식품업계 최초 매출 7조 돌파</p>
+            </li>
+            <li class="y2010_6">
+                <img src="img/sub/year/2010-2.png" alt="" class="png">
+                <p>친환경 발효공법 ‘L-메치오닌’ 공개</p>
+            </li>
+            <li class="y2010_7">
+                <img src="img/sub/year/2010-1.jpg" alt="">
+                <p>인니 파수루안 공장 트립토판 출시</p>
+            </li>
+            <li class="y2000_1">
+                <img src="img/sub/year/2000-4.jpg" alt="">
+                <p>생명공학 친환경 BIO연구 업무협약 체결</p>
+            </li>
+            <li class="y2000_2">
+                <img src="img/sub/year/2000-3.jpg" alt="">
+                <p>브라질 분말라이신 공장 완공</p>
+            </li>
+            <li class="y2000_3 ycut2">
+                <img src="img/sub/year/2000-2.png" alt="" class="png">
+                <p>미국 식품법인 Annie Chun Inc. 인수</p>
+            </li>
+            <li class="y2000_4">
+                <img src="img/sub/year/2000-1.jpg" alt="">
+                <p>인도네시아 종계 사업 시작</p>
+            </li>
+            <li class="y1990_1">
+                <img src="img/sub/year/1990-4.jpg" alt="">
+                <p>햇반 판매량 1억 달성</p>
+            </li>
+            <li class="y1990_2">
+                <img src="img/sub/year/1990-3.png" alt="" class="png">
+                <p>햇반 출시</p>
+            </li>
+            <li class="y1990_3 ycut3">
+                <img src="img/sub/year/1990-2.jpg" alt="">
+                <p>생활화학 연구소 개소</p>
+            </li>
+            <li class="y1990_4">
+                <img src="img/sub/year/1990-1.jpg" alt="">
+                <p>인니 파수루안 MSG 공장 완공</p>
+            </li>
+            <li class="y1980_1">
+                <img src="img/sub/year/1980-3.jpg" alt="">
+                <p>제약공장 준공 가동(이천)</p>
+            </li>
+            <li class="y1980_2">
+                <img src="img/sub/year/1980-2.png" alt="" class="png hepac">
+                <p>인터페론 대량생산 기술개발 성공</p>
+            </li>
+            <li class="y1980_3 ycut4">
+                <img src="img/sub/year/1980-1.jpg" alt="">
+                <p>종합연구소 설립</p>
+            </li>
+            <li class="y1970_1">
+                <img src="img/sub/year/1970-4.png" alt="" class="png">
+                <p>식용유 사업 시작</p>
+            </li>
+            <li class="y1970_2">
+                <img src="img/sub/year/1970-3.jpg" alt="">
+                <p>인천2 사료 공장 준공</p>
+            </li>
+            <li class="y1970_3">
+                <img src="img/sub/year/1970-2.jpg" alt="" class="png">
+                <p>‘다시다’ 생산 개시</p>
+            </li>
+            <li class="y1970_4 ycut5">
+                <img src="img/sub/year/1970-1.jpg" alt="">
+                <p>핵산복합조미료 ‘아이미’ 출시</p>
+            </li>
+            <li class="y1950_1">
+                <img src="img/sub/year/1950-3.jpg" alt="">
+                <p>설탕 첫 수출</p>
+            </li>
+            <li class="y1950_2">
+                <img src="img/sub/year/1950-2.png" alt="" class="png">
+                <p>조미료 제조社 ‘미풍산업’ 합병</p>
+            </li>
+            <li class="y1950_3">
+                <img src="img/sub/year/1950-1.jpg" alt="">
+                <p>제일제당공업주식회사 설립</p>
+            </li>
+        </ul>
+    </section>
+
+    <aside id="yearFixed">
+        <img src="img/logo/cjmark.png" alt="" class="ryb">
+        <div class="year_controls">
+            <ul class="year_dot">
+                <div class="year_whiteline"></div>
+                <li><img src="img/icon/history_dot_on.png" alt=""></li>
+                <li><img src="img/icon/history_dot.png" alt=""></li>
+                <li><img src="img/icon/history_dot.png" alt=""></li>
+                <li><img src="img/icon/history_dot.png" alt=""></li>
+                
+            </ul>
+            <ul class="year_title">
+                <li>글로벌 성장</li>
+                <li>혁신적 변화</li>
+                <li>진화와 도약</li>
+                <li>새로운 시작</li>
+            </ul>
+        </div>
+        <div class="year_num_wrap">
+            <p class="year_num"><span class="year_numsub">2011~</span><br>2020</p>
+            <p class="year_num"><span class="year_numsub">2001~</span><br>2010</p>
+            <p class="year_num"><span class="year_numsub">1991~</span><br>2000</p>
+            <p class="year_num"><span class="year_numsub">1981~</span><br>1990</p>
+            <p class="year_num"><span class="year_numsub">1971~</span><br>1980</p>
+            <p class="year_num"><span class="year_numsub">1953~</span><br>1970</p>
+        </div>
+        <div class="textlist_area">
+            <ul class="history_textlist">
+                <li class="y2020_text">
+                    <span class="hbold_num">2020.02</span>
+                    사료용 아미노산 발린 글로벌 1위 달성<br>
+                    <span class="hbold_num">2019.07</span>
+                    통합연구소 CJ 블로썸 파크 개관<br>
+                    <span class="hbold_num">2018.03</span>
+                    ‘비비고’ 만두로 국내 1위에 이어 美 시장 1위<br>
+                    <span class="hbold_num">2015.06</span>
+                    다우존스 지속가능경영지수 아태지역 기업 편입<br>
+                    <span class="hbold_num">2013.02</span>
+                    세계 최초 친환경 발효공법 ‘L-메치오닌’ 공개<br>
+                    <span class="hbold_num">2012.12</span>
+                    2012년 식품업계 최초 매출 7조 돌파
+                </li>
+                <li class="y2010_text">
+                    <span class="hbold_num">2009.10</span>
+                    생명공학연구 친환경 BIO업무협약 체결<br>
+                    <span class="hbold_num">2007.09</span>
+                    사업 회사 ‘씨제이제일제당 주식회사’ 출범<br>
+                    <span class="hbold_num">2004.03</span>
+                    동물용 사료첨가제 쓰레오닌 출시<br>
+                    <span class="hbold_num">2003.07</span>
+                    인도네시아 종계 사업 시작<br>
+                    <span class="hbold_num">2001.08</span>
+                    인니 파수루안, 좀방공장 합병
+                </li>
+                <li class="y2000_text">
+                    <span class="hbold_num">1999.12</span>
+                    BIO 사업부문 신설 및 생산기술센터 설립<br>
+                    <span class="hbold_num">1996.05</span>
+                    인도네시아 사료 사업 진출<br>
+                    <span class="hbold_num">1992.06</span>
+                    생활화학 연구소 개소<br>
+                    <span class="hbold_num">1991.12</span>
+                    국내 식품업계 최초 매출 1조원 달성<br>
+                    <span class="hbold_num">1991.01</span>
+                    인니 파수루안 분말라이신 공장 완공
+                </li>
+                <li class="y1990_text">
+                    <span class="hbold_num">1988.12</span>
+                    인도네시아 ‘PT-CSA’(現 CJI 전신) 출범<br>
+                    <span class="hbold_num">1986.11</span>
+                    종합연구소 설립<br>
+                    <span class="hbold_num">1982.11</span>
+                    인터페론 대량생산 기술개발 성공<br>
+                    <span class="hbold_num">1982.11</span>
+                    식품업계 최초로 수출 1억달러 돌파<br>
+                    <span class="hbold_num">1980.10</span>
+                    이천 1공장 준공 (육가공 사업 시작)
+                </li>
+                <li class="y1980_text">
+                    <span class="hbold_num">1979.10</span>
+                    인천2 사료 공장 준공<br>
+                    <span class="hbold_num">1979.08</span>
+                    최초 핵산(IMP, GMP) 제조방법 개발<br>
+                    <span class="hbold_num">1977.12</span>
+                    핵산복합조미료 ‘아이미’ 출시<br>
+                    <span class="hbold_num">1973.11</span>
+                    사료사업 시작
+                </li>
+                <li class="y1970_text">
+                    <span class="hbold_num">1968.10</span>
+                    조미료 제조社 ‘미풍산업’ 합병<br>
+                    <span class="hbold_num">1964.11</span>
+                    조미료 사업 시작<br>
+                    <span class="hbold_num">1962.03</span>
+                    설탕 첫 수출<br>
+                    <span class="hbold_num">1958.04</span>
+                    제분 사업 시작<br>
+                    <span class="hbold_num">1953.08</span>
+                    제일제당공업주식회사 설립
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!--    <? include("footer_include.html"); ?>-->
+    <footer id="footer">
+        <div class="footer_text">
+            <p>씨제이제일제당(주) 서울특별시 중구 동호로 330 CJ 제일제당센터<br>
+                대표자 손경식  사업자등록번호 104-86-09535<br><br><br>
+                대표전화 02-6740-1114<br>
+                Copyright &copy; 2021. CJ CHEILJEDANG Corp. All Rights Reserved.
+            </p>
+        </div>
+        <div class="family_site">
+            <p>Family Site</p>
+            <div class="family_icon">
+                <img src="img/icon/arrow_down.png" alt="">
+            </div>
+            <ul class="site_list">
+                <li><a href="http://corp.cgv.co.kr/" target="_blank">CJ CGV</a></li>
+                <li><a href="https://www.cjem.net:433/main/" target="_blank">CJ ENM</a></li>
+                <li><a href="https://www.oliveyoung.co.kr/store/company/brandStory.do" target="_blank">OLIVE YOUNG</a></li>
+            </ul>
+        </div>
+        <ul class="sns fl">
+            <li>
+                <img src="img/icon/sns_insta.png" alt="instagram">
+            </li>
+            <li>
+                <img src="img/icon/sns_kakao.png" alt="kakaotalk">
+            </li>
+            <li>
+                <img src="img/icon/sns_youtube.png" alt="youtube">
+            </li>
+        </ul>
+        <p class="center fl">Service Center<br><span>1544-5357</span></p>
+    </footer>
+</body>
+</html>
